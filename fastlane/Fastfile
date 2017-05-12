@@ -168,7 +168,7 @@ lane :alpha do
     # What configuration to use, usefull for keeping different API keys etc between environments
     configuration:"Alpha",
     # Use this codesigning identity (this is the name of the certificate in your keychain)
-    codesigning_identity:"iPhone Developer: 雷 杨 (M4Q2D965C8)",
+    codesigning_identity:"iPhone Developer: 雷 杨",
     # Export an enterprise app
     export_method:"enterprise",
     # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
