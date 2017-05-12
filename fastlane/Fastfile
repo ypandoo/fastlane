@@ -66,11 +66,11 @@ private_lane :build_app do |options|
   # This part is done only when the app is not for the "production" environment
   if not options[:release]
     # Modulate the color of the icons
-    color_icon(
-      modulation: "#{options[:modulation]}"
-    )
+    # color_icon(
+    #   modulation: "#{options[:modulation]}"
+    # )
     # Add the build number to the icon
-    build_number_icon
+    #build_number_icon
   end
 
   # Update the app name
