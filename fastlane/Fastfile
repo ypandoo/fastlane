@@ -160,11 +160,11 @@ lane :alpha do
     # Set the app id
     app_identifier:"gi.fastlane.alpha",
     # Set the path to the certificate to use in building
-    certificate_path:"cer/cer.p12",
+    certificate_path:"./fastlane/cer/cer.p12",
     # Set the password of the p12 certificate file
     certificate_password:"",
     # Set the path to the provisioning profile to use (change this!)
-    profile:"cer/alpha.mobileprovision",
+    profile:"./fastlane/cer/alpha.mobileprovision",
     # What configuration to use, usefull for keeping different API keys etc between environments
     configuration:"Alpha",
     # Use this codesigning identity (this is the name of the certificate in your keychain)
