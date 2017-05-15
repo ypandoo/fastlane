@@ -112,13 +112,14 @@ private_lane :build_app do |options|
 
   # Build the app
   gym(
-    #scheme: "#{options[:scheme]}",
+    scheme: "#{options[:scheme]}",
     configuration: options[:configuration],
     #provisioning_profile_path: options[:profile],
     #codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method],
     # archive_path: options[:archive_path]
-    output_directory: options[:output_directory]
+    output_directory: './build',
+    clean: true
   )
 
 end
@@ -183,13 +184,13 @@ lane :alpha do
     # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
     project_name:"fastlane",
     # the scheme to build
-    scheme:"fastlane",
+    scheme:"alpha",
 
     team_id: "Z3SUNP5NN8",
 
     archive_path: "../archive",
 
-    output_directory: "./output",
+    output_directory: "./build",
 
     # the build number to use, we use the build number from Jenkins
     build_number: ENV["BUILD_NUMBER"]
