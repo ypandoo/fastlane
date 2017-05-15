@@ -104,11 +104,11 @@ private_lane :build_app do |options|
     build_number: options[:build_number]
   )
 
-  update_project_codesigning(
-    path: "#{options[:project_name]}.xcodeproj",
-    use_automatic_signing: true,
-    team_id:options[:team_id]
-  )
+  # update_project_codesigning(
+  #   path: "#{options[:project_name]}.xcodeproj",
+  #   use_automatic_signing: true,
+  #   team_id:options[:team_id]
+  # )
 
   # Build the app
   gym(
