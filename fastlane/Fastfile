@@ -118,8 +118,8 @@ private_lane :build_app do |options|
     # codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method],
     # archive_path: options[:archive_path]
-    output_directory: './build',
-    clean: true
+    output_directory: options[:output_directory],
+    # clean: true
   )
 
 end
