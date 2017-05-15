@@ -181,7 +181,7 @@ lane :alpha do
     # What configuration to use, usefull for keeping different API keys etc between environments
     configuration:"Alpha",
     # Use this codesigning identity (this is the name of the certificate in your keychain)
-    codesigning_identity:"iOS Developer",
+    codesigning_identity:"iPhone Developer",
     # Export an enterprise app
     export_method:"development",
 
