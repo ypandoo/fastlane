@@ -385,6 +385,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos10.1]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = Z3SUNP5NN8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = fastlane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gi.fastlane.alpha;
