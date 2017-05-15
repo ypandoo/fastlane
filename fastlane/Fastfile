@@ -94,28 +94,28 @@ private_lane :build_app do |options|
   )
 
   # Install the provisioning profile
-  # update_project_provisioning(
-  #   xcodeproj: "#{options[:project_name]}.xcodeproj",
-  #   profile: options[:profile]
-  # )
+  update_project_provisioning(
+    xcodeproj: "#{options[:project_name]}.xcodeproj",
+    profile: options[:profile]
+  )
 
   # Version bump
   increment_build_number(
     build_number: options[:build_number]
   )
 
-  update_project_codesigning(
-    path: "#{options[:project_name]}.xcodeproj",
-    use_automatic_signing: true,
-    team_id:options[:team_id]
-  )
+  # update_project_codesigning(
+  #   path: "#{options[:project_name]}.xcodeproj",
+  #   use_automatic_signing: true,
+  #   team_id:options[:team_id]
+  # )
 
   # Build the app
   gym(
     scheme: "#{options[:scheme]}",
     configuration: options[:configuration],
-    #provisioning_profile_path: options[:profile],
-    # codesigning_identity: options[:codesigning_identity],
+    provisioning_profile_path: options[:profile],
+    codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method],
     # archive_path: options[:archive_path]
     output_directory: options[:output_directory],

@@ -200,7 +200,7 @@
 					E86E0D141EC564AB005E9561 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = Z3SUNP5NN8;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E86E0D2C1EC564AC005E9561 = {
 						CreatedOnToolsVersion = 8.1;
@@ -390,7 +390,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gi.fastlane.alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "97df770d-9962-4643-ae13-ab9d93cb185b";
+				PROVISIONING_PROFILE_SPECIFIER = alpha;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
