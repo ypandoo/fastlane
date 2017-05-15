@@ -94,10 +94,10 @@ private_lane :build_app do |options|
   )
 
   # Install the provisioning profile
-  update_project_provisioning(
-    xcodeproj: "#{options[:project_name]}.xcodeproj",
-    profile: options[:profile]
-  )
+  # update_project_provisioning(
+  #   xcodeproj: "#{options[:project_name]}.xcodeproj",
+  #   profile: options[:profile]
+  # )
 
   # Version bump
   increment_build_number(
