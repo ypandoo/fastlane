@@ -168,9 +168,10 @@ lane :alpha do
     # What configuration to use, usefull for keeping different API keys etc between environments
     configuration:"Alpha",
     # Use this codesigning identity (this is the name of the certificate in your keychain)
-    codesigning_identity:"iOS Distribution",
+    codesigning_identity:"iPhone Developer: 雷 杨",
     # Export an enterprise app
-    export_method:"enterprise",
+    export_method:"development",
+    export_team_id: "Z3SUNP5NN8",
     # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
     project_name:"fastlane",
     # the scheme to build
