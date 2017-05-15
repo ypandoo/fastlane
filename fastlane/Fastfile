@@ -168,7 +168,7 @@ lane :alpha do
     # Modulate the colors of the icons by these degrees
     modulation:66.6,
     # Change the app name
-    app_name:"fastlane α",
+    app_name:"fastlane",
     # Set the app id
     app_identifier:"gi.fastlane.alpha",
     # Set the path to the certificate to use in building
