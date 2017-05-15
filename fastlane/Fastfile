@@ -184,7 +184,7 @@ lane :alpha do
     # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
     project_name:"fastlane",
     # the scheme to build
-    scheme:"alpha",
+    scheme:"fastlane",
 
     team_id: "Z3SUNP5NN8",
 
