@@ -30,14 +30,14 @@ end
 after_all do |lane|
 
   # Remove all build artifacts, but keep mobileprovisioning profiles since they are stored in GIT
-  clean_build_artifacts(
-    exclude_pattern: ".*\.mobileprovision"
-  )
+  # clean_build_artifacts(
+  #   exclude_pattern: ".*\.mobileprovision"
+  # )
 
-  # Reset all changes to the git checkout
-  reset_git_repo(
-    force: true
-  )
+  # # Reset all changes to the git checkout
+  # reset_git_repo(
+  #   force: true
+  # )
 
 end
 
