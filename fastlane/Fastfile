@@ -118,6 +118,7 @@ private_lane :build_app do |options|
     #codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method],
     # archive_path: options[:archive_path]
+    output_directory: options[:output_directory]
   )
 
 end
@@ -187,6 +188,8 @@ lane :alpha do
     team_id: "Z3SUNP5NN8",
 
     archive_path: "../archive",
+
+    output_directory: "./output",
 
     # the build number to use, we use the build number from Jenkins
     build_number: ENV["BUILD_NUMBER"]
