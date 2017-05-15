@@ -109,7 +109,7 @@ private_lane :build_app do |options|
     #scheme: "#{options[:scheme]}",
     configuration: options[:configuration],
     #provisioning_profile_path: options[:profile],
-    codesigning_identity: options[:codesigning_identity],
+    #codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method]
   )
 
