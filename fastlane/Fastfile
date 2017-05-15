@@ -107,7 +107,7 @@ private_lane :build_app do |options|
   update_project_codesigning(
     path: "#{options[:project_name]}.xcodeproj",
     use_automatic_signing: true,
-    team_id: "Z3SUNP5NN8"
+    team_id:options[:team_id]
   )
 
   # Build the app
@@ -117,6 +117,7 @@ private_lane :build_app do |options|
     #provisioning_profile_path: options[:profile],
     #codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method]
+    archive_path: options[:archive_path]
   )
 
 end
@@ -182,6 +183,11 @@ lane :alpha do
     project_name:"fastlane",
     # the scheme to build
     scheme:"fastlane",
+
+    team_id: "Z3SUNP5NN8",
+
+    archive_path: "../archive",
+
     # the build number to use, we use the build number from Jenkins
     build_number: ENV["BUILD_NUMBER"]
   )
