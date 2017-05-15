@@ -121,7 +121,8 @@ private_lane :build_app do |options|
     output_directory: options[:output_directory],
     include_bitcode: false,
     include_symbols: false,
-    output_name: "#{options[:app_name]}-#{options[:build_number]}.ipa"
+    # output_name: "#{options[:app_name]}-#{options[:build_number]}.ipa"
+    output_name: "alpha.ipa"
     # clean: true
   )
 
@@ -196,6 +197,7 @@ lane :alpha do
     output_directory: "/Users/SuperLei/jekins/build",
 
     # the build number to use, we use the build number from Jenkins
+    #build_number: ENV["BUILD_NUMBER"]
     build_number: ENV["BUILD_NUMBER"]
   )
   # Push to Hockeyapp as Alpha release
