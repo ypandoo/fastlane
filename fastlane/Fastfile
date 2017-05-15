@@ -190,7 +190,7 @@ lane :alpha do
 
     archive_path: "../archive",
 
-    output_directory: "./build",
+    output_directory: "/Users/SuperLei/jekins/build",
 
     # the build number to use, we use the build number from Jenkins
     build_number: ENV["BUILD_NUMBER"]
