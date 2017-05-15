@@ -112,10 +112,10 @@ private_lane :build_app do |options|
 
   # Build the app
   gym(
-    # scheme: "#{options[:scheme]}",
+    scheme: "#{options[:scheme]}",
     configuration: options[:configuration],
     #provisioning_profile_path: options[:profile],
-    codesigning_identity: options[:codesigning_identity],
+    # codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method],
     # archive_path: options[:archive_path]
     output_directory: './build',
