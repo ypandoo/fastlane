@@ -170,7 +170,7 @@ lane :alpha do
     # Set the password of the p12 certificate file
     certificate_password:"",
     # Set the path to the provisioning profile to use (change this!)
-    profile:"./fastlane/cer/alpha.mobileprovision",
+    #profile:"./fastlane/cer/alpha.mobileprovision",
     # What configuration to use, usefull for keeping different API keys etc between environments
     configuration:"Alpha",
     # Use this codesigning identity (this is the name of the certificate in your keychain)
