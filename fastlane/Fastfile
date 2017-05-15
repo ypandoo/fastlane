@@ -30,9 +30,9 @@ end
 after_all do |lane|
 
   # Remove all build artifacts, but keep mobileprovisioning profiles since they are stored in GIT
-  # clean_build_artifacts(
-  #   exclude_pattern: ".*\.mobileprovision"
-  # )
+  clean_build_artifacts(
+    exclude_pattern: ".*\.mobileprovision"
+  )
 
   # Reset all changes to the git checkout
   reset_git_repo(
@@ -117,7 +117,7 @@ private_lane :build_app do |options|
     #provisioning_profile_path: options[:profile],
     #codesigning_identity: options[:codesigning_identity],
     export_method: options[:export_method],
-    archive_path: options[:archive_path]
+    # archive_path: options[:archive_path]
   )
 
 end
@@ -177,7 +177,7 @@ lane :alpha do
     # Use this codesigning identity (this is the name of the certificate in your keychain)
     codesigning_identity:"iOS Developer",
     # Export an enterprise app
-    export_method:"enterprise",
+    export_method:"development",
 
     # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
     project_name:"fastlane",
