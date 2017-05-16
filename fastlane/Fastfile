@@ -88,11 +88,10 @@ private_lane :build_app do |options|
 
   # Install the certificate
   import_certificate(
-    # certificate_path: options[:certificate_path],
-    # certificate_password: options[:certificate_password],
-    certificate_path: "/Users/SuperLei/jekins/fastlane/fastlane/cer/cer.p12",
-    certificate_password: "",
-    keychain_name: "login.keychain"
+    certificate_path: options[:certificate_path],
+    certificate_password: options[:certificate_password],
+    keychain_name: "login.keychain",
+    log_output: true
   )
 
   # Install the provisioning profile
