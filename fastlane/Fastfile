@@ -90,7 +90,7 @@ private_lane :build_app do |options|
   import_certificate(
     certificate_path: options[:certificate_path],
     certificate_password: options[:certificate_password],
-    keychain_name: "/Users/SuperLei/Library/Keychains/login.keychain-db",
+    keychain_name: "/Users/SuperLei/Library/Keychains/login.keychain",
     log_output: true
   )
 
