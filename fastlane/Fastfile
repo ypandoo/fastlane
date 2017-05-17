@@ -22,7 +22,7 @@ before_all do
   actions_path './fastlane/actions'
 
   # If the GIT status is not clean, abort. We won't want to include junk in the build
-  ensure_git_status_clean
+  # ensure_git_status_clean
 
 end
 
