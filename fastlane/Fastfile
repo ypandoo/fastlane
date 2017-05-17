@@ -50,9 +50,9 @@ error do |lane, exception|
   )
 
   # Reset all changes to the git checkout
-  reset_git_repo(
-    force: true
-  )
+  # reset_git_repo(
+  #   force: true
+  # )
 
 end
 
